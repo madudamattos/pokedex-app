@@ -40,7 +40,7 @@ body{
 .pokemon {
     margin: .5rem;
     padding: .5rem .7rem;
-    background-color: #46D1B2;
+    /* background-color: #46D1B2; */
     border-radius: 1rem;
     /* max-width: 250px; */
     min-width: 160px;
@@ -50,20 +50,66 @@ body{
     
 }
 
-.pokemon__type--grass{
-    background-color:  #46D1B2;
-}
-.pokemon__type--water{
-    background-color: #77BEFE;
+/* filtro de cor por tipo de pokemon */
+.normal{
+    background-color: #C6C6A7;
 }
 
-.pokemon__type--fire{
-    background-color: #FB6B6B;
+.fighting{
+    background-color: #D67873;
 }
 
-.pokemon__type--eletric{
-    background-color: #FFD970;
+.flying{
+    background-color: #C6B7F5;
 }
+.poison{
+    background-color: #C183C1;
+}
+.ground{
+    background-color: #EBD69D;
+}
+.rock{
+    background-color: #D1C17D;
+}
+.grass{
+    background-color: #A7DB8D;
+}
+.water{
+    background-color: #9DB7F5;
+}
+.fire{
+    background-color: #F5AC78;
+}
+.steel{
+    background-color: #D1D1E0;
+}
+.ghost{
+    background-color: #A292BC;
+}
+.bug{
+    background-color: #C6D16E;
+}
+.eletric{
+    background-color: #FAE078;
+}
+.psychic{
+    background-color: #FA92B2;
+}
+.ice{
+    background-color: #BCE6E6;
+}
+.dragon{
+    background-color: #A27DFA;
+}
+.dark{
+    background-color: #A29288;
+}
+.fairy{
+    background-color: #F4BDC9;
+}
+
+/* filtro de cor por tipo de pokemon FIM*/
+
 
 .pokemon .detail{
     display: flex;
@@ -74,28 +120,28 @@ body{
 .pokemon .detail .types{
     list-style: none;
     padding: 0;
+    justify-content: center;
 }
 
 .pokemon .detail .types .type{
     list-style: none;
     padding: 0;
     font-size: 12px;
-    background: rgba(255, 255, 255, .3);
+    /* background: rgba(255, 255, 255, .3); */
     padding: .20rem .5rem;
     margin: 4px;
     color:#fff;
-    
+    filter: brightness(1.1);
     text-align: center;
     border-radius: 10px;
 }
 
 .pokemon img{
-    max-width: 100%;
+    max-width: 110px;
     max-height: 70px;
     align-self: flex-end;
-    
+    padding: 0rem .7rem;
 }
-
 
 .pokemon .number{
     text-align: right;
@@ -106,6 +152,25 @@ body{
 
 .pokemon .name{
     padding: 5px;
+    text-transform: capitalize;
+}
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+.pagination button{
+    background-color: #6c79db;
+    border: 1rem;
+    border-radius: 1rem;
+    padding: .5rem .7rem;
+    color: #fff;
+    font-size: .825rem;
 }
 
 
